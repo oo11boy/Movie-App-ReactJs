@@ -1,0 +1,93 @@
+.suggestion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    
+    width: 95%;
+    box-sizing: unset;
+    margin: auto;
+}
+
+.suggestion img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+  object-fit: cover;
+  object-position:top;
+}
+.su{
+    margin: 5px;
+    width: 15%;
+    height: 100%;
+    margin-left: 0;
+    position: relative;
+}
+
+
+.Su6{
+
+    margin: 5px;
+    margin-right: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+
+  
+}
+
+.Su6 div:nth-child(1) {
+margin-bottom:0.5em;
+    position: relative;
+}
+.Su6 div:nth-child(3) {
+    margin-top:0.5em;
+        position: relative;
+    }
+    
+.Su6 div{
+    overflow: hidden;
+    height: 50%;
+ 
+    width: 100%;
+}
+.Su6 img{
+height: 100%;
+width: 100%;
+}
+.titlesu{
+    cursor: pointer;
+    display: flex;
+    position: absolute!important;
+    width: 100%;
+    height: 100%!important;
+  margin: 0;
+  text-align: center;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+top: 0;
+background-color: rgba(0, 0, 0, 0.694);
+animation: opacity 0.5s;
+}
+@keyframes opacity {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.titlesu svg{
+    font-size: 3em;
+    padding-bottom: 5px;
+}
+.titlesu svg:hover{
+    font-size: 4em;
+}
+.imdbrate{
+    color: orange;
+    margin-top: 10px;
+}
+.p-relative{
+    position: relative;
+}

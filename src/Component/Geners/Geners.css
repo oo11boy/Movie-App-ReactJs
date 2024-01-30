@@ -1,0 +1,36 @@
+.geners{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.titlegener{
+    margin-top: 30px;
+    font-family: kalameh!important;
+}
+.genersitem{
+    border-radius: 15px;
+    padding: 5px 10px;
+    display: flex;
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgba(37,42,49,.9)
+    
+}
+
+
+
+.titlegener{
+    font-size: 1.5em;
+}
+.cgener{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 95%;
+ 
+    margin: auto;
+    margin-top: 20px;
+    flex-direction: column;
+}

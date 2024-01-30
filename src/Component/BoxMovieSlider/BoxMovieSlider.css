@@ -1,0 +1,75 @@
+.BoxMovieSlider{
+    width: 95%;
+    margin: auto;
+    height: auto;
+    margin-top: 15px;
+}
+.titlebm{
+    font-size: 1.5em;
+    font-family: kalameh;
+}
+
+.BoxMov{
+    margin-top: 20px;
+    height: auto;
+    
+}
+.itemboxmovie{
+    height: 100%;
+text-decoration: none;
+border-radius: 15px;
+}
+
+.itemboxmovie h2{
+    font-size: 1em;
+}
+.itemboxmovie img{
+    width: 100%;
+    object-fit: cover;
+    height: 60%;
+    border-radius: 15px;
+}
+.p-rel{
+    position: relative!important;
+}
+.hoverbox{
+    position: absolute;
+    top: 0!important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   animation: opacity 0.4s;
+   cursor: pointer;
+    flex-direction: column;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+.hoverbox svg{
+    font-size: 4em;
+}
+.hoverbox p{
+    font-size: 1.2em;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+.BoxMovieSlider    .swiper-slide{
+        font-size: 0.7em!important;
+        height: 65%!important;
+    }
+    }
+
+
+    
+
+@media only screen and (max-width: 374px) {
+
+    .swiper-slide{
+        font-size: 0.5em!important;
+        height: 65%!important;
+    }
+    }

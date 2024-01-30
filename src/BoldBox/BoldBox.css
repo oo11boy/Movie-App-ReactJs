@@ -1,0 +1,27 @@
+.BoldBox{
+width: 100%;
+margin: auto;
+height: 60vh;
+
+display: flex;
+align-items: center;
+justify-content: left;
+position: relative;
+}
+
+.BoldBox img{
+    height: 100%;
+    width: 35%;
+    object-fit: cover;
+    object-position: top;
+  
+}
+.contentboldbox{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: rgb(51,119,207);
+    background: linear-gradient(90deg, rgba(51,119,207,0.28343837535014005) 5%, rgba(51,119,207,1) 33%);
+    
+    height: 100%;
+}
