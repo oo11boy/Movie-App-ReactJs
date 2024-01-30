@@ -4,6 +4,14 @@
     height: auto;
     margin-top: 15px;
 }
+.LazyLoad {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+  
+  .is-visible {
+    opacity: 1;
+  }
 .titlebm{
     font-size: 1.5em;
     font-family: kalameh;
@@ -73,3 +81,12 @@ text-decoration: none;
         height: 65%!important;
     }
     }
+
+
+    
+@media only screen and (max-width: 760px) {
+    .titlebm{
+        font-size: 1em;
+        font-family: kalameh;
+    }
+}

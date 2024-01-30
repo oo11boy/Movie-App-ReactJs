@@ -57,7 +57,7 @@ export default function Geners() {
   return (
     <>
       <div className='cgener'>
-        <div className='titlegener'>ژانرهای فیلم و سریال:</div>
+  
         <Swiper
           {...swiperParams}
           centeredSlides={false}

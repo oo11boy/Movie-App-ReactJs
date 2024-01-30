@@ -1,22 +1,23 @@
 .SliderMovie{
     position: relative;
     width: 100%;
-    max-height: 100vh;
+ height: 87vh;
   
 }
 .imgslider{
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
-    
-    background-position: 10px;
-   
-    height: auto;
+    position: relative;
+    background-position: center;
+   height: 100%!important;
     width: 100%;
 }
 .imgslider video{
     width: 100%;
-object-fit: fill;
-    height:89%;
+object-fit: cover;
+margin-top: 40px;
+object-position: top;
+    height:100%;
     
 }
 
@@ -35,15 +36,8 @@ object-fit: fill;
     font-size: 0.8em;
     color: var(--swiper-theme-color);
   }
-  .bg-blacker{
-   
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-z-index: 10;
-    height: 100%;
-  }
+
+
   .autoplay-progress svg {
     --progress: 0;
     position: absolute;
@@ -59,4 +53,103 @@ z-index: 10;
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
   }
+  .onslider{
+display: flex;
+align-items: right;
+justify-content: center;
+flex-direction: column;
+   top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+background-color: rgba(0, 0, 0, 0.383);
+  z-index: 333;
+  padding-right: 30px;
+  }
   
+  .onslider h2{
+    font-family: kalameh;
+   
+ 
+    font-size: 1.2em;
+  }
+.infoslide{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+    font-size: 0.4em!important;
+}
+.infoslide p svg{
+margin-left: 5px;
+}
+.infoslide p{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.playmslider{
+    padding: 5px 20px;
+    text-decoration: none;
+    background-color: orange;
+    color: #000000;
+font-size: 0.4em;
+    border-radius: 10px;
+    display: flex;
+ 
+    align-items: center;
+    justify-content: space-evenly;
+}
+.playmslider svg{
+    margin: 10px;
+}
+.playmslider path{
+ 
+    color: black;
+}
+.playmslider:hover{
+    background-color: white;
+}
+.playsliderp{
+    display: inherit;
+}
+
+
+    
+
+@media only screen and (max-width: 1268px) {
+    .onslider{
+justify-content: end;
+align-items: center;
+padding: 10px;
+    }
+
+    .onslider h2{
+        font-size: 1em;
+    }
+}
+
+
+@media only screen and (max-width: 446px) {
+    .onslider h2{
+        font-size: 0.8em;
+    }
+    .onslider a{
+        font-size: 0.4em;
+    }
+}
+
+
+@media only screen and (max-width: 374px) {
+    .onslider{
+        justify-content: end;
+        align-items: center;
+    
+            }
+}
+

@@ -1,22 +1,28 @@
 {
   "Slider":[
- {   "id":1 , 
+    
+    {   "id":2 , 
+    "title":"آبجی",
+    "imdb":6.4,
+    "year":1394,
+    "critis_rate": "87%",
+    "type":"video",
+    "img":"https://static.namava.ir/Content/Upload/Images/296d237e-d6ab-43eb-90e5-5a4f7cca0319.jpg" 
+    },{   "id":1 , 
  "img":"https://static.cdn.asset.filimo.com/ct/dra36_desktop_1_v6.jpeg" ,
  "title": "ملاقات خصوصی", 
  "year":1402,
  "imdb":6.8,
-"type":"tv"
-},
-{   "id":2 , 
-"type":"video",
-"img":"https://static.namava.ir/Content/Upload/Images/296d237e-d6ab-43eb-90e5-5a4f7cca0319.jpg" 
+"type":"tv",
+"critis_rate": "72%"
 },
 {   "id":3 , 
 "img":"https://static.cdn.asset.filimo.com/ct/6lqk9_desktop_1_v2.jpeg" ,
 "title": "نیسان آبی 2", 
 "year":1402,
 "imdb":6.5,
-"type":"movie"
+"type":"movie",
+"critis_rate": "76%"
 }
 
   ],
