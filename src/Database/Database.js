@@ -1,5 +1,5 @@
 export let Database={
-    "Logo":"https://www.gapfilm.ir/_nuxt/img/logo.56dd883.png",
+    "Logo":"https://play-lh.googleusercontent.com/6Kmrs69DUPmEXqpNHscoaeN4oyh00u1XUmjcx7IO0rr8lsbuvXWDgojpnW9-OyXDfsXD",
     "Itemmenu":['خانه' , 'سریال' , 'فیلم' , 'کودک' , 'وبلاگ' , 'پشتیبانی']
 }
 

@@ -17,7 +17,7 @@
 .itemboxmovie{
     height: 100%;
 text-decoration: none;
-border-radius: 15px;
+
 }
 
 .itemboxmovie h2{
@@ -27,7 +27,7 @@ border-radius: 15px;
     width: 100%;
     object-fit: cover;
     height: 60%;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 .p-rel{
     position: relative!important;
@@ -42,7 +42,7 @@ border-radius: 15px;
    animation: opacity 0.4s;
    cursor: pointer;
     flex-direction: column;
-    height: 60%;
+    height: 86%;
     background-color: rgba(0, 0, 0, 0.596);
 }
 .hoverbox svg{

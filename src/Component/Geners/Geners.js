@@ -6,10 +6,11 @@ import { Pagination } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import './Geners.css';
 import { Api } from '../Api';
+import Loading from '../Loading/Loading';
 
 export default function Geners() {
   const [geners, setGeners] = useState([]);
-
+  const [imageLoaded, setImageLoaded] = useState(false);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -21,7 +22,7 @@ export default function Geners() {
 
         // Set state with unique genres
         setGeners(uniqueGenres);
-
+        setImageLoaded(true); 
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -64,11 +65,21 @@ export default function Geners() {
           modules={[Pagination]}
           className="geners"
         >
-          {geners.map((item, index) => (
+{imageLoaded?   (geners.map((item, index) => (
             <SwiperSlide key={index}>
               <Link to={`./${item}`} className='genersitem'>{item}</Link>
             </SwiperSlide>
-          ))}
+          ))):
+          <> 
+          {Array.from({ length: 9 }, (_, index) => (
+              <SwiperSlide key={index} >
+                <Loading height={'30px'} />
+              </SwiperSlide>
+            ))}
+                </>
+
+          }
+       
         </Swiper>
       </div>
     </>

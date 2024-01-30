@@ -1,0 +1,17 @@
+.loadingtheme {
+    width: 100%;
+    animation: loadinganimation 1s infinite;
+  }
+  
+  @keyframes loadinganimation {
+    0% {
+      background-color: rgb(55, 54, 54);
+    }
+    50% {
+      background-color: rgb(40, 39, 39);
+    }
+    100% {
+        background-color: rgb(55, 54, 54);
+      }
+  }
+  
