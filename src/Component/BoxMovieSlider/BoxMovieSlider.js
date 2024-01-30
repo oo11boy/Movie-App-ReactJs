@@ -11,7 +11,7 @@ import Loading from '../Loading/Loading';
 import LazyLoad from 'react-lazy-load';
 
 export default function BoxMovieSlider(props) {
-    const { type = 'movie', titleprops = 'Top Movie:', sort = '-imdb' } = props;
+    const { type = 'movie', titleprops = 'Top Movie:', sort ,order} = props;
 
     const [showtitle, setshowtitle] = useState(-1);
     const [MovieList, setMovieList] = useState([]);
@@ -20,7 +20,7 @@ export default function BoxMovieSlider(props) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${Api}Movie?type=${type}&_sort=${sort}`);
+                const response = await fetch(`${Api}Movie?type=${type}&_sort=${sort}&_order=${order}`);
                 const data = await response.json();
                 setMovieList(data);
                 setImageLoaded(true); 

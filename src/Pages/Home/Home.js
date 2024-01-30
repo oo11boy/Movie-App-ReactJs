@@ -15,14 +15,14 @@ export default function Home() {
       {/* <Suggestion type="tv" /> */}
     
       <Geners />
-      <BoxMovieSlider type="movie" titleprops="برترین فیلم ها:" sort="-imdb" />
+      <BoxMovieSlider type="movie" titleprops="برترین فیلم ها:" sort="imdb" order="desc" />
 
-      <BoxMovieSlider type="movie" titleprops="جدیدترین فیلم ها:" sort="-year" />
+      <BoxMovieSlider type="movie" titleprops="جدیدترین فیلم ها:" sort="year" order="desc" />
 
-      <BoxMovieSlider type="tv" titleprops="برترین سریال ها:" sort="-imdb" />
-      <BoxMovieSlider type="tv" titleprops="جدیدترین سریال ها:" sort="-year" />
+      <BoxMovieSlider type="tv" titleprops="برترین سریال ها:" sort="imdb" order="desc" />
+      <BoxMovieSlider type="tv" titleprops="جدیدترین سریال ها:" sort="year" order="desc" />
 
-      <BoxMovieSlider type="animation" titleprops="برترین انیمیشن ها:" sort="-imdb" />
+      <BoxMovieSlider type="animation" titleprops="برترین انیمیشن ها:" sort="imdb" order="desc" />
 <BoldBox/>
     </div>
   )
