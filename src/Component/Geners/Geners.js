@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -7,30 +7,10 @@ import { Link } from 'react-router-dom';
 import './Geners.css';
 import { Api } from '../Api';
 import Loading from '../Loading/Loading';
+import { GenersContext } from '../../ContextApi/GenersContext/GenersContext';
 
 export default function Geners() {
-  const [geners, setGeners] = useState([]);
-  const [imageLoaded, setImageLoaded] = useState(false);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`${Api}Movie`);
-        const data = await response.json();
-
-        // Extract unique genres and split multi-genre strings
-        const uniqueGenres = Array.from(new Set(data.flatMap(item => item.genre.split("  ،  "))));
-
-        // Set state with unique genres
-        setGeners(uniqueGenres);
-        setImageLoaded(true); 
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
+const genrecontext=useContext(GenersContext)
   const swiperParams = {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -65,7 +45,7 @@ export default function Geners() {
           modules={[Pagination]}
           className="geners"
         >
-{imageLoaded?   (geners.map((item, index) => (
+{genrecontext.imageLoaded?   (genrecontext.geners.map((item, index) => (
             <SwiperSlide key={index}>
               <Link to={`./${item}`} className='genersitem'>{item}</Link>
             </SwiperSlide>

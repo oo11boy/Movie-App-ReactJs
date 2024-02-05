@@ -6,7 +6,6 @@ import './BoxMovieSlider.css';
 import { Link } from 'react-router-dom';
 import { FaRegCirclePlay } from 'react-icons/fa6';
 import { Api } from '../Api';
-import { LoadingContext } from '../../ContextApi/LoadingPage/LoadingPageContext';
 import Loading from '../Loading/Loading';
 import LazyLoad from 'react-lazy-load';
 
@@ -20,7 +19,7 @@ export default function BoxMovieSlider(props) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${Api}Movie?type=${type}&_sort=${sort}&_order=${order}`);
+                const response = await fetch(`${Api}Movie?type=${type}&_sort=${sort}`);
                 const data = await response.json();
                 setMovieList(data);
                 setImageLoaded(true); 

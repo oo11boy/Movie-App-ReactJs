@@ -3,13 +3,15 @@ import { useRoutes } from 'react-router-dom'
 
 import './App.css'
 import MovieRoutes from './MovieRoutes'
-import { LoadingContextProvider } from './ContextApi/LoadingPage/LoadingPageContext'
+import { SearchModalContextProvider } from './ContextApi/SearchModalContext/SearchModalContext'
+import { GenersContextProvider } from './ContextApi/GenersContext/GenersContext'
 
 export default function App() {
   let RouteMovie = useRoutes(MovieRoutes)
 
   return (
-    <LoadingContextProvider>
+    <SearchModalContextProvider>
+      <GenersContextProvider>
       <>
       
       <div className='container'>
@@ -18,6 +20,7 @@ export default function App() {
         
         </div>
         </>
-    </LoadingContextProvider>
+        </GenersContextProvider>
+    </SearchModalContextProvider>
   )
 }
