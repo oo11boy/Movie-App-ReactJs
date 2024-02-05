@@ -61,15 +61,16 @@ useEffect(()=>{
 const filteredMovies = isgener.gener == "search" ? MovieList.map((movie) => movie) : MovieListbyg.map((movie) => movie);
 console.log(filteredMovies)
     return (
-        <>
+        <div className='searchpage'>
             <Header />
             <div className='SearchpBox'>
-
+<div className='fathersearch'>
                 <form action="" className='SearchP'>
                     <input type="text" onChange={(e)=>setsearchtext(e.target.value)} />
                     <FaSearch />
                     <MdOutlineFilterList onClick={() => modalContext.setModalOpen(true)} className='fafilter' />
                 </form>
+                </div>
                 <div className='fzhaner'>
                 <div className='filterdesktop'>
                     <MdOutlineFilterList />   <p onClick={() => { modalContext.setModalOpen(true) }}>فیلترگذاری</p>
@@ -124,6 +125,6 @@ console.log(filteredMovies)
             <>
 
             </>
-        </>
+        </div>
     )
 }
