@@ -111,6 +111,13 @@ margin-top: 10px;
             .itemimgS{
                 width: 40%;
             }
+
+            .sec2filter{
+              
+                flex-direction: column!important;
+                justify-self: start!important;
+                align-items: start!important;
+            }
          }
 .imgsearch{
     height: 80%;

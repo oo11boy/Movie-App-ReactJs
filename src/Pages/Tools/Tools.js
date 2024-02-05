@@ -28,9 +28,9 @@ const [searchtext,setsearchtext]=useState('')
         const fetchData = async () => {
             try {
 
-                const response = await fetch(`${Api}Movie?type=${modalContext.filteritems.type}&_sort=${modalContext.filteritems.order && "-like"}`);
+                const response = await fetch(`${Api}Movie?${modalContext.filteritems.type =="movie" ? 'type=movie' : modalContext.filteritems.type =="tv" ? 'type=tv': '?'}&_sort=${modalContext.filteritems.order && "desc"}`);
                 const data = await response.json();
-
+console.log(response)
                 setMovieList(data);
                 setImageLoaded(true);
    
@@ -59,7 +59,7 @@ useEffect(()=>{
 },[modalContext.filteritems.type,modalContext.filteritems.order,searchtext,MovieListbyg])
 
 const filteredMovies = isgener.gener == "search" ? MovieList.map((movie) => movie) : MovieListbyg.map((movie) => movie);
-
+console.log(filteredMovies)
     return (
         <>
             <Header />
